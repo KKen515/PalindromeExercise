@@ -8,7 +8,12 @@ namespace PalindromeExerciseTests
     {
         [Theory]
         [InlineData("peep", true)]
-        [InlineData("other", false)]
+        [InlineData("dud", true)]
+        [InlineData("anna", true)]
+        [InlineData("civic", true)]
+        [InlineData("kayak", true)]
+        [InlineData("doughnut", false)]
+        [InlineData("dude", false)]
         public void IsAPalindrome(string word, bool expected)
         {
             
